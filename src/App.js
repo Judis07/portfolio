@@ -4,7 +4,7 @@ import Contact from './pages/Contact/contact';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home}></Route>
