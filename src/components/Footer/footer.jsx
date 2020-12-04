@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="copyright">Created By Arvind M</div>
 
         <div className="social_links">
-          <div>Find Me On:</div>
+          <div>Find me on:</div>
           <div className="linkedin_icon_div">
             <a
               href="https://www.linkedin.com/in/arvind-m-ab2a71148/"
