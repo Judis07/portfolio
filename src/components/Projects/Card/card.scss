@@ -1,0 +1,56 @@
+$color-primary: #153956;
+
+.card {
+  //   border: 1px solid black;
+  border-radius: 5px;
+  width: 35%;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  margin: 2em;
+
+  &_img {
+    border-bottom: 1px solid #d9d9d97a;
+    img {
+      display: block;
+    }
+  }
+  &_about {
+    padding: 2em;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_title {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  &_link {
+    padding: 0.3em;
+    font-size: 0.9em;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  &_languages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+
+  &_tech {
+    margin-right: 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    border-radius: 50px;
+    padding: 0.2em 1em;
+  }
+}

@@ -1,0 +1,20 @@
+$color-primary: #153956;
+
+.hero_container {
+  .hero_intro_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4em 0;
+
+    .title {
+      font-size: 4em;
+      color: $color-primary;
+    }
+
+    .subtitle {
+      font-size: 2em;
+      color: $color-primary;
+    }
+  }
+}
