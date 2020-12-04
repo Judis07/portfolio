@@ -1,7 +1,6 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home/home';
 import Contact from './pages/Contact/contact';
-// import Header from './components/Header/header';
 
 function App() {
   return (
