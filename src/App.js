@@ -9,6 +9,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/contact" component={Contact}></Route>
+          <Route component={Home}></Route>
         </Switch>
       </BrowserRouter>
     </HashRouter>
