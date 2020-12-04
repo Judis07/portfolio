@@ -1,0 +1,28 @@
+$color-primary: #153956;
+
+.footer_container {
+  background-color: $color-primary;
+  color: #fff;
+  padding: 1.5em 0;
+
+  .inner_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+
+    .linkedin_icon_div {
+      width: 1.5em;
+    }
+
+    .github_icon_div {
+      width: 1.5em;
+    }
+  }
+}
