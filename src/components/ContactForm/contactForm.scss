@@ -7,6 +7,18 @@ $color-primary: #153956;
   padding: 7em 3em;
   width: 40%;
 
+  @media only screen and (max-width: 1200px) {
+    width: 50%;
+    padding: 4em 2.5em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: initial;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -22,6 +34,9 @@ $color-primary: #153956;
       margin-bottom: 1em;
       font-size: 1.1em;
       font-weight: bold;
+      @media only screen and (max-width: 600px) {
+        font-size: 0.9em;
+      }
     }
 
     input {

@@ -18,9 +18,21 @@ $color-primary: #153956;
     align-items: center;
     height: 80vh;
     margin-bottom: 4em;
+    @media only screen and (max-width: 800px) {
+      justify-content: center;
+      margin-top: 2em;
+    }
   }
 
   .contact_img_container {
     width: 45%;
+
+    @media only screen and (max-width: 1200px) {
+      width: 40%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
   }
 }

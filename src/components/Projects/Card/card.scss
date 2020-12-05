@@ -43,6 +43,9 @@ $color-primary: #153956;
     color: $color-primary;
     font-size: 1.2em;
     font-weight: bold;
+    @media only screen and (max-width: 600px) {
+      font-size: 1em;
+    }
   }
 
   &_link {
