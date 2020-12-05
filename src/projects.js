@@ -21,13 +21,13 @@ const data = [
     previewImg: chatLandingPreview,
     languages: ['HTML', 'CSS', 'FIGMA'],
   },
-  {
-    title: 'chatApp',
-    link: 'https://chat-app-taupe.vercel.app/',
-    previewImg: chatLandingPreview,
+  // {
+  //   title: 'chatApp',
+  //   link: 'https://chat-app-taupe.vercel.app/',
+  //   previewImg: chatLandingPreview,
 
-    languages: ['React', 'Redux', 'Sass', 'Firebase', 'Firesstore'],
-  },
+  //   languages: ['React', 'Redux', 'Sass', 'Firebase', 'Firesstore'],
+  // },
 ];
 
 export default data;
