@@ -9,6 +9,9 @@ $color-primary: #153956;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 
   .social_links {
@@ -16,6 +19,15 @@ $color-primary: #153956;
     align-items: center;
     justify-content: space-evenly;
     width: 20%;
+
+    @media only screen and (max-width: 1200px) {
+      width: 25%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 50%;
+      margin-top: 1em;
+    }
 
     .linkedin_icon_div {
       width: 1.5em;

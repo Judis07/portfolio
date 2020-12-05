@@ -10,6 +10,14 @@ $color-primary: #153956;
     font-size: 2em;
     text-align: right;
     font-weight: bold;
+
+    @media only screen and (max-width: 850px) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5em;
+    }
   }
 
   .cards {
@@ -17,5 +25,10 @@ $color-primary: #153956;
     justify-content: center;
     margin-top: 4em;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

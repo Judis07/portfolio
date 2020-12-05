@@ -3,12 +3,23 @@ $color-primary: #153956;
 .skills_container {
   background-color: $color-primary;
   padding: 6em 0;
+  @media only screen and (max-width: 600px) {
+    padding: 4em 0;
+  }
+
   .section_title {
     text-transform: lowercase;
     text-decoration: underline;
     color: #fff;
     font-size: 2em;
     font-weight: bold;
+    @media only screen and (max-width: 850px) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5em;
+    }
   }
 
   .my_skills {
@@ -25,6 +36,11 @@ $color-primary: #153956;
       border-radius: 50px;
       margin-right: 2em;
       margin-bottom: 2em;
+      @media only screen and (max-width: 600px) {
+        font-size: 0.9em;
+        margin-right: 1em;
+        padding: 0.8em 1.5em;
+      }
     }
   }
 }

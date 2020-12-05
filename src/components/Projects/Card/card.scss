@@ -8,6 +8,20 @@ $color-primary: #153956;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   margin: 2em;
 
+  @media only screen and (max-width: 1200px) {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: 850px) {
+    width: 50%;
+    margin: initial;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+
   &_img {
     border-bottom: 1px solid #d9d9d97a;
     img {
@@ -52,5 +66,10 @@ $color-primary: #153956;
     color: $color-primary;
     border-radius: 50px;
     padding: 0.2em 1em;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0.2em 0.9em;
+      font-size: 0.8em;
+    }
   }
 }

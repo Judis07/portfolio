@@ -13,7 +13,7 @@ const data = [
     title: 'chatApp',
     link: 'https://chat-app-taupe.vercel.app/',
     previewImg: chatAppPreview,
-    languages: ['React', 'Redux', 'Sass', 'Firebase', 'Firesstore'],
+    languages: ['React', 'Redux', 'Sass', 'Firebase', 'Firestore'],
   },
   {
     title: 'chatApp Landing Page',
