@@ -13,10 +13,10 @@ const About = () => {
             <img src={MyImg} alt="" />
           </div>
           <div className="infro_div">
-            I am self taught front end web developer currently working as a
-            frontend developer for an edTech company called Kraftshala in Delhi.
-            I am strongly passionate about making fast, easy to use , responsive
-            web experience for the users both on the web and mobile.
+            A linux fan boy with great passion for software development. Likes
+            to think out of the box and loves using React JS to make amazing
+            user interfaces. Can work well in teams. Furthermore, likes to
+            listen to music and play video games.
           </div>
         </div>
       </div>
