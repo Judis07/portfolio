@@ -19,6 +19,16 @@ $color-primary: #153956;
   @media only screen and (max-width: 600px) {
     width: initial;
   }
+
+  .err_msg {
+    color: red;
+    background-color: #fff;
+    border: 1px solid white;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
   form {
     display: flex;
     flex-direction: column;
