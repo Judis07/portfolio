@@ -10,6 +10,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -33,6 +34,7 @@ const ContactForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
+    setSuccess(false);
 
     const data_to_send = {
       name,
@@ -45,11 +47,12 @@ const ContactForm = () => {
         'https://truncated.herokuapp.com/api/portfolio/response',
         data_to_send
       );
+
       // console.log('Succes', res);
+      setSuccess(true);
       setLoading(false);
     } catch (err) {
       console.log('error', err.response);
-
       setLoading(false);
 
       const { status } = err.response;
@@ -58,6 +61,8 @@ const ContactForm = () => {
       } else {
         setError('Something went wrong please try again later.');
       }
+      setSuccess(false);
+
       // setError()
     }
 
@@ -71,6 +76,8 @@ const ContactForm = () => {
   return (
     <div className="contact_form_container">
       {error && <div className="err_msg">{error}</div>}
+
+      {success && <div className="success_msg">Message sent successfully!</div>}
 
       <form onSubmit={handleSubmit}>
         <div className="input_label">

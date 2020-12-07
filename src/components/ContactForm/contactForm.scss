@@ -29,6 +29,15 @@ $color-primary: #153956;
     margin-bottom: 1em;
   }
 
+  .success_msg {
+    color: green;
+    background-color: #fff;
+    border: 1px solid white;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
   form {
     display: flex;
     flex-direction: column;
