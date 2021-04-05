@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="intro">
           <h1 className="title">Hi, I’m Arvind M.</h1>
           <div className="subtitle">
-            <strong>Frontend </strong>Developer.
+            <strong>Senior Frontend Developer.</strong>
           </div>
           <div className="social_links">
             <div className="linkedin_icon_div">
