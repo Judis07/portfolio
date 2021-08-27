@@ -1,0 +1,86 @@
+$color-primary: #153956;
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero_container {
+  .hero_intro_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4em 0;
+    @media only screen and (max-width: 850px) {
+      flex-direction: column;
+      padding-top: 1em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding-top: initial;
+    }
+
+    .img_div {
+      svg {
+        @media only screen and (max-width: 1200px) {
+          width: 21em;
+        }
+
+        @media only screen and (max-width: 600px) {
+          width: 17em;
+        }
+      }
+    }
+
+    .intro {
+      @media only screen and (max-width: 850px) {
+        text-align: center;
+      }
+    }
+
+    .title {
+      font-size: 4em;
+      color: $color-primary;
+      @media only screen and (max-width: 1200px) {
+        font-size: 3.5em;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 2.5em;
+      }
+    }
+
+    .subtitle {
+      font-size: 2em;
+      color: $color-primary;
+
+      @media only screen and (max-width: 1200px) {
+        font-size: 1.8em;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 1.2em;
+      }
+    }
+
+    .social_links {
+      display: flex;
+      margin-top: 1.5em;
+
+      @media only screen and (max-width: 850px) {
+        justify-content: center;
+      }
+
+      .linkedin_icon_div {
+        width: 2em;
+        margin-right: 2em;
+      }
+
+      .github_icon_div {
+        width: 2em;
+      }
+    }
+  }
+}

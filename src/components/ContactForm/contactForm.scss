@@ -1,0 +1,88 @@
+$color-primary: #153956;
+
+.contact_form_container {
+  background-color: $color-primary;
+  border-radius: 10px;
+
+  padding: 7em 3em;
+  width: 40%;
+
+  @media only screen and (max-width: 1200px) {
+    width: 50%;
+    padding: 4em 2.5em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: initial;
+  }
+
+  .err_msg {
+    color: red;
+    background-color: #fff;
+    border: 1px solid white;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .success_msg {
+    color: green;
+    background-color: #fff;
+    border: 1px solid white;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input_label {
+    margin-bottom: 2em;
+    width: 100%;
+    label {
+      display: block;
+      color: #fff;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      font-weight: bold;
+      @media only screen and (max-width: 600px) {
+        font-size: 0.9em;
+      }
+    }
+
+    input {
+      padding: 1em;
+    }
+
+    textarea {
+      height: 12em;
+      padding: 1em;
+      resize: none;
+    }
+  }
+
+  .submit_btn {
+    width: 100%;
+    margin-top: 1em;
+
+    button {
+      display: block;
+      width: 100%;
+      background: #ff6f61;
+      border: none;
+      outline: none;
+      color: #fff;
+      padding: 1em 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

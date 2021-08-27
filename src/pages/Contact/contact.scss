@@ -1,0 +1,38 @@
+$color-primary: #153956;
+
+.contact_page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .contact_header {
+    padding: 2em 0;
+    color: $color-primary;
+    text-decoration: underline;
+  }
+
+  .inner_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 80vh;
+    margin-bottom: 4em;
+    @media only screen and (max-width: 800px) {
+      justify-content: center;
+      margin-top: 2em;
+    }
+  }
+
+  .contact_img_container {
+    width: 45%;
+
+    @media only screen and (max-width: 1200px) {
+      width: 40%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+}
